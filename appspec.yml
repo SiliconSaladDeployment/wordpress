@@ -13,8 +13,8 @@ permissions:
        - file
 hooks:
    BeforeInstall:
-    - location: .scripts/installpackages.sh
+    - location: .script/installpackages.sh
       runas: root
    AfterInstall:
-    - location: .scripts/restartnginx.sh
+    - location: .script/restartnginx.sh
       runas: root
