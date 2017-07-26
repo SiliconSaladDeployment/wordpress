@@ -1,0 +1,4 @@
+CREATE DATABASE wordpress-db;
+CREATE USER 'user'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON wordpress-db.* TO 'user'@'%' IDENTIFIED BY 'password';
+FLUSH PRIVILEGES;
