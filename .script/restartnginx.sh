@@ -8,10 +8,6 @@ mysql -u $MASTERUSER --password=$MASTERPASSWORD --host=$ENDPOINT < /usr/share/ng
 
 cat /usr/share/nginx/html/wordpress/nginx.conf > /etc/nginx/nginx.conf
 
-chown -R nginx:nginx /usr/share/nginx/html/wordpress
-
-chmod -R 755 /usr/share/nginx/html/wordpress
-
 service php-fpm restart
 
 service nginx restart
