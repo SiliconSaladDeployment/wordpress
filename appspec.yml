@@ -3,14 +3,6 @@ os: linux
 files:
    - source: /
      destination: /usr/share/nginx/html/wordpress
-permissions:
-   - object: /usr/share/nginx/html/wordpress
-     pattern: "**"
-     owner: nginx
-     group: nginx
-     mode: 755
-     type:
-       - file
 hooks:
    BeforeInstall:
     - location: .scripts/installpackages.sh

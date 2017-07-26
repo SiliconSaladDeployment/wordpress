@@ -12,4 +12,6 @@ chown -R nginx:nginx /usr/share/nginx/html/wordpress
 
 chmod -R 755 /usr/share/nginx/html/wordpress
 
+service php-fpm restart
+
 service nginx restart
