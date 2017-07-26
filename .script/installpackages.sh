@@ -18,3 +18,4 @@ chmod -R 755 /usr/share/nginx/html/wordpress
 
 mysql -u $MASTERUSER --password=$MASTERPASSWORD --host=$ENDPOINT < /usr/share/nginx/html/wordpress/setup.mysql
 
+cat /usr/share/nginx/html/wordpress/nginx.conf > /etc/nginx/nginx.conf
